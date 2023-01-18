@@ -1,0 +1,14 @@
+name: 'Build Hakyll site for GitHub Pages'
+description: 'A GitHub Action that compiles your static Hakyll site for GitHub Pages'
+author: 'Stephen Nicholas Swatman <stephen@v25.nl>'
+inputs:
+  token:
+    description: 'GitHub token'
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/stephenswat/hakyll-build-pages:latest'
+branding:
+  icon: 'book-open'
+  color: 'purple'
