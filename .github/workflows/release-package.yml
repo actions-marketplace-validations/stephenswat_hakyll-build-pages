@@ -9,6 +9,8 @@ on:
     paths:
       - 'Dockerfile'
       - 'entrypoint.sh'
+  workflow_dispatch:
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
